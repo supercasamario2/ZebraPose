@@ -1,8 +1,10 @@
 from distutils.core import setup, Extension
 
 module = Extension('Render',
-                    include_dirs = ['/usr/local/include','..','/usr/local/lib/python3.6/dist-packages/numpy/core/include/',
-                    '../render_related_source/glad/include'],
+                    include_dirs = ['/usr/local/include',
+                                    '..',
+                                    '/usr/local/lib/python3.6/dist-packages/numpy/core/include/',
+                                   '../render_related_source/glad/include'],
                     libraries = ['opencv_core', 'opengl_render'],
                     library_dirs = ['/usr/local/lib', '../build'],
                     sources = ['RenderModule.cpp'],
