@@ -6,9 +6,7 @@ import bop_io
 
 
 def generate_meshs(bop_path, dataset_name, divide_number_each_iteration, number_of_itration, executable_path):
-    print(bop_path, dataset_name)
     dataset_dir,source_dir,model_plys,model_info,model_ids,rgb_files,depth_files,mask_files,mask_visib_files,gts,gt_infos,cam_param_global = bop_io.get_dataset(bop_path,dataset_name)
-    print(dataset_dir,source_dir,model_plys)
     if not(os.path.exists(dataset_dir + "/models_GT_color/")):
         os.makedirs(dataset_dir + "/models_GT_color/")
     

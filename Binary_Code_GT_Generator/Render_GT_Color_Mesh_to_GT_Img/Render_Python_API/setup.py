@@ -1,8 +1,9 @@
 from distutils.core import setup, Extension
-
+import numpy
 module = Extension('Render',
                     include_dirs = ['/usr/local/include',
                                     '..',
+                                    numpy.get_include(),
                                     '/opt/conda/envs/zebra/lib/python3.8/site-packages/numpy/core/include',
                                    '../render_related_source/glad/include',
                                    '/opt/conda/envs/zebra/include/python3.8m',
