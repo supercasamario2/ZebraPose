@@ -1,4 +1,4 @@
-#include <python.h>
+#include <python3.6/Python.h>
 #include <numpy/arrayobject.h>
 
 #include <eigen3/Eigen/Core>
